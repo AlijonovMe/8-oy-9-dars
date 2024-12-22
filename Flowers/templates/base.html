@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Flowers - shop</title>
+    <link href="{% static 'images/icon.png' %}" rel="icon">
+    {% include 'parts/_styles.html' %}
+</head>
+<body>
+
+<div>
+    {% include 'parts/_navbar.html' %}
+
+    <main class="mt-5 mb-5 container">
+        {% block main %}
+        {% endblock main %}
+    </main>
+
+    {% include 'parts/_footer.html' %}
+</div>
+
+{% include 'parts/_js.html' %}
+
+</body>
+</html>
